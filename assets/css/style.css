@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+/* Start Header */
+header nav {
+  position: fixed;
+  top: 5px;
+  left: -215px;
+  background-color: orange;
+  border-radius: 0 10px 10px 0;
+  padding: 0 10px 0 0;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 0 20px 0px #ccc;
+  font-size: 15px;
+  height: 40px;
+  transition: 1s;
+}
+nav i {
+  padding-left: 20px;
+}
+header nav:hover {
+  left: 0;
+}
+.hero {
+  height: 100vh;
+}
+.hero span {
+  color: orange;
+  font-weight: bold;
+}
+/* End Header */
+/* Start Main */
+main {
+  direction: rtl;
+}
+h2 {
+  position: relative;
+  padding-right: 30px;
+}
+main section h2::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 20px solid;
+  border-color: transparent orange transparent transparent;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Start paragraphs */
+.paragraphs {
+  background-color: #d9e5d6;
+  min-height: 400px;
+  box-shadow: 0px 30px 20px -30px #aaa inset;
+}
+.paragraphs h1 {
+  font-family: fantasy;
+  letter-spacing: 15px;
+  font-size: 100px;
+  color: #393d41;
+  text-align: center;
+  position: relative;
+  bottom: 70px;
+  mix-blend-mode: difference;
+}
+@media screen and (max-width: 575px){
+  .paragraphs h1 {
+    font-size: 60px;
+    letter-spacing: 10px;
+    bottom: 37px;
+  }
+}
+@media screen and (max-width: 400px){
+  .paragraphs h1 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    bottom: 26px;
+  }
+}
+.paragraphs .container-fluid {
+  display: grid;
+  align-items: center;
+}
+.paragraphs .row {
+  gap: 20px 0;
+}
+.paragraphs .card {
+  max-width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  border: 0;
+  box-shadow: 0 0 15px 10px #c1d3bc;
+  border-radius: 15px;
+  background-color: orange;
+  color: white;
+}
+.paragraphs a {
+  color: white;
+}
+/* End paragraphs */
+/* Start What is */
+.what-is {
+  box-shadow: 0px 30px 20px -30px #aaa inset;
+}
+/* End What is */
+/* Start popularity */
+.popularity ol li::marker{
+  font-size: 25px;
+}
+.popularity ul {
+  list-style: disc;
+  margin-right: 20px;
+}
+.popularity ul li::marker {
+  font-size: 15px;
+}
+.accordion-button {
+  color: #0c63e4;
+}
+.accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon)
+}
+.accordion-item:first-of-type .accordion-button {
+  background-color: transparent;
+  box-shadow: unset;
+} 
+.accordion-item {
+  background-color: transparent;
+  border: 0;
+}
+/* End popularity */
+/* Start uses */
+.uses i {
+  font-size: 1rem;
+  color: orange;
+}
+/* End uses */
+footer {
+  min-height: 50px;
+  background-color: #c1d3bc;
+  text-align: center;
+  color: #393d41;
+}
+footer a {
+  color: #393d41;
+}
+footer a:hover {
+  color: #393d41;
+}
