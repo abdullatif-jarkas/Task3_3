@@ -62,7 +62,7 @@ main section h2::after {
   box-shadow: 0px 30px 20px -30px #aaa inset;
 }
 .paragraphs h1 {
-  font-family: fantasy;
+  font-family: Anton;
   letter-spacing: 15px;
   font-size: 100px;
   color: #393d41;
